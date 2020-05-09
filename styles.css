@@ -99,12 +99,12 @@ nav .left {
 }
 
 .action button {
-    background-color: #F66767;
+    background-color: #c92926;
     color: white;
     border: none;
     border-radius: 30px;
     padding: 10px 1rem;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -241,8 +241,10 @@ section {
 .features th:nth-child(even) {
     background-color: rgb(239, 244, 248);
 }
-
-#last-row {
+.features dd {
+    margin: 16px 0px;
+}
+.features .action {
     padding: 30px 0px;
     border-bottom: 0px solid rgba(112, 112, 112, 0.16);
 

@@ -4,11 +4,11 @@
 	"start_url" : "/",
     "description" : "The objective of the Cog is to publish the original manuscripts, not published anywhere else and to encourages the young budding authors to provide an easy platform for the publication of their books, journals etc.",
     "display" : "standalone",
-    "background_color" : "#FFFFF",
     "theme_color" : "#F66767",
+    "background_color": "#FFFFFF",
     "icons": [
      {
-      "src": "\/logo512x512.jpg",
+      "src": "https://res.cloudinary.com/journalapp/image/upload/v1589027166/COG/logo512x512_ek5xuy.jpg",
       "sizes": "512x512",
       "type": "image\/png",
       "density": "1.0"
