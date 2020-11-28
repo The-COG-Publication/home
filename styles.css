@@ -217,7 +217,7 @@ section {
 }
 
 .color-splash {
-    color: #f66767;
+    color: #c92926;
 }
 
 .features {
@@ -280,6 +280,10 @@ section {
 
 .inspire .left h3 {
     font-weight: normal;
+}
+
+h2 > ul{
+    list-style-type: none;
 }
 
 .review-nav {
@@ -348,6 +352,7 @@ footer {
     padding-left: 0px;
     color: #FECE6F;
 }
+
 .footer-nav a {
     color: #FECE6F;
 }

@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | The COG Publication</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.min.css">
     <meta content="Nikhil Taneja" name="author" />
-    <meta content="contact, about, publications, author, manuscripts, PhD, books, publish, anywhere, printing" name="keywords" />
+    <meta content="contact, about, publications, author, manuscripts, PhD, books, publish, anywhere, printing"
+        name="keywords" />
     <meta
         content="The objective of the Cog is to publish the original manuscripts, not published anywhere else and to encourages the young budding authors to provide an easy platform for the publication of their books, journals etc."
         name="description" />
     <meta content="link or terms" name="no-email-collection" />
     <meta content="safe for kids" name="rating" />
-    <link async rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="57x57"
         href="/https://res.cloudinary.com/journalapp/image/upload/v1589021890/COG/apple-icon-57x57_ogwa2j.png">
     <link rel="apple-touch-icon" sizes="60x60"
@@ -51,10 +55,16 @@
     <nav id="myNav">
         <div class="left">
             <div class="logo">
-                <img src="../logo.jpg" class="logo" alt="The COG Publications logo">
+                <picture>
+                    <source type="image/webp" srcset="../logo.webp">
+                    <source type="image/jpeg" srcset="../logo.wdp">
+                    <img src="../logo.png" class="logo" alt="The COG Publications logo">
+                </picture>
             </div>
             <div class="heading">
-                <a href="/"><h4>The COG Publications</h4></a>
+                <a href="/">
+                    <h4>The COG Publications</h4>
+                </a>
             </div>
         </div>
         <div class="middle">
@@ -68,11 +78,12 @@
         </div>
         <script>
             let active = undefined;
-            function navbarActive(index=0){
+
+            function navbarActive(index = 0) {
                 const navItems = document.querySelectorAll('.navigation li a');
-                if (active !== index){
+                if (active !== index) {
                     if (active != undefined)
-                    navItems[active].classList.remove("active");
+                        navItems[active].classList.remove("active");
                     active = index;
                     navItems[active].classList.add("active");
                 }
@@ -158,7 +169,11 @@
             <option value="Thriller"></option>
             <option value="Young adult"></option>
         </datalist>
-        <button id="submit-tag" onclick="simulateEnterPress()"><svg width="36px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.725 485.725"><path d="M459.835 196.758L73.53 9.826C48.085-2.507 17.46 8.123 5.126 33.57a51.2 51.2 0 0 0-1.449 41.384L64.025 225.77h421.7a50.77 50.77 0 0 0-25.9-29.013zm-395.8 63.146L3.677 410.756c-10.472 26.337 2.4 56.177 28.726 66.65a51.32 51.32 0 0 0 18.736 3.631 51.51 51.51 0 0 0 22.39-5.12l386.304-187a50.79 50.79 0 0 0 25.89-29.013h-421.7z"/></svg></button>
+        <button id="submit-tag" onclick="simulateEnterPress()"><svg width="36px" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 485.725 485.725">
+                <path
+                    d="M459.835 196.758L73.53 9.826C48.085-2.507 17.46 8.123 5.126 33.57a51.2 51.2 0 0 0-1.449 41.384L64.025 225.77h421.7a50.77 50.77 0 0 0-25.9-29.013zm-395.8 63.146L3.677 410.756c-10.472 26.337 2.4 56.177 28.726 66.65a51.32 51.32 0 0 0 18.736 3.631 51.51 51.51 0 0 0 22.39-5.12l386.304-187a50.79 50.79 0 0 0 25.89-29.013h-421.7z" />
+                </svg></button>
         <div class="tags">
             <div class="container">
                 <ul id="list"></ul>
@@ -190,7 +205,11 @@
             <div class="cards">
                 <div class="card" onclick="selectThis(this, 'Bronze')">
                     <div class="left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#571B1B"/><path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                            <circle cx="24" cy="24" r="24" fill="#571B1B" />
+                            <path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895"
+                                transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round"
+                                stroke-width="3" /></svg>
                     </div>
                     <div class="right">
                         <div class="card-title">
@@ -201,7 +220,11 @@
                 </div>
                 <div class="card" onclick="selectThis(this, 'Silver')">
                     <div class="left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#BBBBBB"/><path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                            <circle cx="24" cy="24" r="24" fill="#BBBBBB" />
+                            <path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895"
+                                transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round"
+                                stroke-width="3" /></svg>
                     </div>
                     <div class="right">
                         <div class="card-title">
@@ -210,9 +233,13 @@
                         <div class="card-content">₹ 19,999 Incl. GST</div>
                     </div>
                 </div>
-                <div class="card"  onclick="selectThis(this, 'Gold')">
+                <div class="card" onclick="selectThis(this, 'Gold')">
                     <div class="left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#FFEBCE"/><path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                            <circle cx="24" cy="24" r="24" fill="#FFEBCE" />
+                            <path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895"
+                                transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round"
+                                stroke-width="3" /></svg>
                     </div>
                     <div class="right">
                         <div class="card-title">
@@ -221,9 +248,13 @@
                         <div class="card-content">₹ 49,999 Incl. GST</div>
                     </div>
                 </div>
-                <div class="card"  onclick="selectThis(this, 'None')">
+                <div class="card" onclick="selectThis(this, 'None')">
                     <div class="left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><circle cx="24" cy="24" r="24" fill="#FCCDCD"/><path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895" transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                            <circle cx="24" cy="24" r="24" fill="#FCCDCD" />
+                            <path class="tick" data-name="Path 8" d="M741.679,3322.578l6.774,6.774,13.9-13.895"
+                                transform="translate(-728 -3298)" fill="none" stroke="#fff" stroke-linecap="round"
+                                stroke-width="3" /></svg>
                     </div>
                     <div class="right">
                         <div class="card-title">
@@ -233,7 +264,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <h1>How can we contact you?</h1>
         <div class="form-control">
@@ -273,10 +304,10 @@
                     </svg>
                     editor@thecogpublication.in
                 </span></a>
-                <h3>Follow us on Social Media</h3>
-                <a href="https://www.facebook.com/The-Cog-Publication-104417704616208" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/CogPublication" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/thecogpublication/" class="fa fa-instagram"></a>
+            <h3>Follow us on Social Media</h3>
+            <a href="https://www.facebook.com/The-Cog-Publication-104417704616208" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/CogPublication" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/thecogpublication/" class="fa fa-instagram"></a>
         </div>
         <ul class="footer-nav">
             <li class="nav-link">Privacy Policy</li>
@@ -284,6 +315,7 @@
         </ul>
         <p>© 2020 TheCOGPublication.in. All rights reserved</p>
     </footer>
-    <script src="../main.js"></script>
+    <script src="../main.min.js"></script>
 </body>
+
 </html>
