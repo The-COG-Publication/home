@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: roboto;
+    font-family: roboto,system-ui,-apple-system,sans-serif;
     z-index: 1;
 }
 
