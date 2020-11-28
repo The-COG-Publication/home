@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | The COG Publication</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
     <link rel="stylesheet" href="../styles.min.css">
     <meta content="Nikhil Taneja" name="author" />
     <meta content="contact, about, publications, author, manuscripts, PhD, books, publish, anywhere, printing"
@@ -16,8 +17,6 @@
         name="description" />
     <meta content="link or terms" name="no-email-collection" />
     <meta content="safe for kids" name="rating" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="apple-touch-icon" sizes="57x57"
         href="/https://res.cloudinary.com/journalapp/image/upload/v1589021890/COG/apple-icon-57x57_ogwa2j.png">
     <link rel="apple-touch-icon" sizes="60x60"
@@ -58,7 +57,10 @@
                 <picture>
                     <source type="image/webp" srcset="../logo.webp">
                     <source type="image/jpeg" srcset="../logo.wdp">
-                    <img src="../logo.png" class="logo" alt="The COG Publications logo">
+                    <picture>
+                        <source type="image/webp" srcset="../logo.webp">
+                        <img src="./logo.png" class="logo" width="42px" height="42px" alt="The COG Publications logo">
+                    </picture>
                 </picture>
             </div>
             <div class="heading">
@@ -173,7 +175,7 @@
                 viewBox="0 0 485.725 485.725">
                 <path
                     d="M459.835 196.758L73.53 9.826C48.085-2.507 17.46 8.123 5.126 33.57a51.2 51.2 0 0 0-1.449 41.384L64.025 225.77h421.7a50.77 50.77 0 0 0-25.9-29.013zm-395.8 63.146L3.677 410.756c-10.472 26.337 2.4 56.177 28.726 66.65a51.32 51.32 0 0 0 18.736 3.631 51.51 51.51 0 0 0 22.39-5.12l386.304-187a50.79 50.79 0 0 0 25.89-29.013h-421.7z" />
-                </svg></button>
+            </svg></button>
         <div class="tags">
             <div class="container">
                 <ul id="list"></ul>
@@ -305,9 +307,20 @@
                     editor@thecogpublication.in
                 </span></a>
             <h3>Follow us on Social Media</h3>
-            <a href="https://www.facebook.com/The-Cog-Publication-104417704616208" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/CogPublication" class="fa fa-twitter"></a>
-            <a href="https://www.instagram.com/thecogpublication/" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/The-Cog-Publication-104417704616208"
+                aria-label="The Cog Publication Facebook Page"><svg width="60" height="60" class="fab"
+                    xmlns="http://www.w3.org/2000/svg" aria-label="Facebook" role="img" viewBox="0 0 512 512">
+                    <rect width="512" height="512" rx="15%" fill="#1877f2" />
+                    <path
+                        d="M355.6 330l11.4-74h-71v-48c0-20.2 9.9-40 41.7-40H370v-63s-29.3-5-57.3-5c-58.5 0-96.7 35.4-96.7 99.6V256h-65v74h65v182h80V330h59.6z"
+                        fill="#fff" /></svg></a>
+            <a href="https://twitter.com/CogPublication" aria-label="The Cog Publication Twitter Page"><svg width="60"
+                    height="60" class="fab" xmlns="http://www.w3.org/2000/svg" aria-label="Twitter" role="img"
+                    viewBox="0 0 512 512">
+                    <rect width="512" height="512" rx="15%" fill="#1da1f2" />
+                    <path fill="#fff"
+                        d="M437 152a72 72 0 01-40 12a72 72 0 0032-40a72 72 0 01-45 17a72 72 0 00-122 65a200 200 0 01-145-74a72 72 0 0022 94a72 72 0 01-32-7a72 72 0 0056 69a72 72 0 01-32 1a72 72 0 0067 50a200 200 0 01-105 29a200 200 0 00309-179a200 200 0 0035-37" />
+                </svg></a>
         </div>
         <ul class="footer-nav">
             <li class="nav-link">Privacy Policy</li>
